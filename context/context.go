@@ -68,8 +68,8 @@ func CreateAppContext(flgConfig string, flgDebug bool) (*AppContext, error) {
 	} else {
 		termui.Body.AddRows(
 			termui.NewRow(
-				termui.NewCol(config.SidebarWidth, 0, view.Channels),
 				termui.NewCol(config.MainWidth, 0, view.Chat),
+				termui.NewCol(config.SidebarWidth, 0, view.Channels),
 			),
 			termui.NewRow(
 				termui.NewCol(config.SidebarWidth, 0, view.Mode),
